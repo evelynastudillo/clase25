@@ -1,0 +1,28 @@
+<%= form_with model: Sale.new do |f| %>
+
+
+<li><%= f.label :cod %>
+<%= f.number_field :cod %></li>
+
+<li>
+<%= f.label :detail %>
+<%= f.text_area :detail %></li>
+
+<li><%= f.label :category %>
+<%= f.text_area :category %></li>
+
+<li><%= f.label :value %>
+<%= f.number_field :value %></li>
+
+<li><%= f.label :discount %>
+<%= f.number_field :discount %></li>
+
+<li><%= f.label :tax %>
+<%= f.number_field :tax %></li>
+
+<li><%= f.label "Exento de IVA"%>
+<%= f.check_box "Exento de IVA" %></li>
+
+
+
+<% end %>
